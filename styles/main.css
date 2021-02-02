@@ -1,7 +1,170 @@
+/* Base */
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+  height: 10vh;
+}
+
+/* Main */
+main {
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main img {
+  margin: 0 auto;
+
+  height: auto;
+  width: 100%;
+}
+
+/* main - form */
+main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main - form input-area */
+main form .input-div {
+  margin: 25px;
+  padding: 0 10px;
+
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+
+  height: 46px;
+
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: 30px minmax(10px, 400px) 30px;
+  align-items: center;
+  justify-items: center;
+}
+
+main form .input-div:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+/* main - form input-area icons */
+main form .input-div .search {
+  height: 20px;
+  width: 20px;
+}
+
+main form .input-div .mic {
+  height: 24px;
+  width: 24px;
+
+  cursor: pointer;
+}
+
+/* main - form input-area input */
+main form .input-div .form-input {
+  justify-self: stretch;
+  cursor: pointer;
+}
+
+main form .input-div .form-input input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+/* main - form buttons */
+main form .button-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+main form .button-search,
+main form .button-lucky {
+  background-color: #f8f9fa;
+  color: #3c4043;
+
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+
+  min-height: 36px;
+  min-width: 54px;
+
+  text-align: center;
+  cursor: pointer;
+}
+
+main form .button-lucky {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main form .button-lucky:hover,
+main form .button-search:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+
+  background-color: #f8f9fa;
+  color: #202124;
+
+  border: 1px solid #dadce0;
+}
+
+/* main - languages */
+main .languages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  line-height: 30px;
+
+  max-width: 490px;
+
+  margin: 15px 0;
+
+  font-size: 12px;
+
+  text-align: center;
+}
+
+main .languages a {
+  margin: 0 6px;
+}
+
+/* Footer */
+footer {
+  height: 20vh;
 }
