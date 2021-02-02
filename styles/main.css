@@ -13,12 +13,67 @@ body {
 
 /* Header */
 header {
-  height: 10vh;
+  height: 7vh;
+  width: 100vw;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 20px;
+
+  font-size: 13px;
+}
+
+/* header paragraphs */
+header .header-p {
+  display: flex;
+}
+
+header p {
+  margin: 0 8px;
+
+  cursor: pointer;
+}
+
+header p:hover,
+header p:active {
+  text-decoration: underline;
+}
+
+/* header images */
+header img {
+  margin: 0 8px;
+
+  height: 24px;
+  width: 24px;
+
+  cursor: pointer;
+}
+
+header img.apps {
+  opacity: 0.5;
+}
+
+header img.apps:hover,
+header img.apps:active {
+  opacity: 1;
+}
+
+header img.whoImg {
+  border-radius: 50%;
+
+  height: 30px;
+  width: 30px;
 }
 
 /* Main */
 main {
-  height: 50vh;
+  height: 60vh;
 
   display: flex;
   flex-direction: column;
@@ -168,3 +223,5 @@ main .languages a {
 footer {
   height: 20vh;
 }
+
+
