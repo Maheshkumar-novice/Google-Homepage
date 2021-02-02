@@ -224,4 +224,25 @@ footer {
   height: 20vh;
 }
 
+/* media queries */
+@media (max-width: 600px) {
+  /* header */
+  header {
+    justify-content: space-between;
+  }
+  /* main */
+  main .img-div {
+    width: 200px;
+    height: auto;
+  }
+}
 
+@media (max-width: 450px) {
+  /* main */
+  main .mic,
+  main .button-div,
+  main .button-div input,
+  main .button-div a {
+    display: none;
+  }
+}
