@@ -54,7 +54,7 @@ main form .input-div {
   background-color: white;
 
   display: grid;
-  grid-template-columns: 30px minmax(10px, 400px) 30px;
+  grid-template-columns: 30px minmax(10px, 500px) 30px;
   align-items: center;
   justify-items: center;
 }
