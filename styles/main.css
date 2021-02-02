@@ -1,4 +1,4 @@
-/* Base */
+/* base */
 *,
 *::after,
 *::before {
@@ -20,7 +20,7 @@ body {
   transform: translateY(-13vh);
 }
 
-/* Header */
+/* header */
 header {
   height: 7vh;
   width: 100vw;
@@ -116,6 +116,7 @@ main form {
 /* main - form input-area */
 main form .input-div {
   margin: 25px;
+  margin-bottom: 15px;
   padding: 0 10px;
 
   border: 1px solid #dfe1e5;
@@ -169,9 +170,9 @@ main form .input-div .form-input input {
 /* main - form buttons */
 main form .button-div {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 main form .button-search,
@@ -227,16 +228,23 @@ main .languages {
 
   margin: 15px 0;
 
-  font-size: 12px;
+  font-size: 14px;
 
   text-align: center;
 }
 
 main .languages a {
   margin: 0 6px;
+
+  text-decoration: none;
 }
 
-/* Footer */
+main .languages a:hover,
+main .languages a:active {
+  text-decoration: underline;
+}
+
+/* footer */
 footer {
   justify-self: flex-end;
 
@@ -291,6 +299,10 @@ footer .others {
 
 /* media queries */
 @media (max-width: 700px) {
+  /* base */
+  .transformMe {
+    transform: translateY(-5vh);
+  }
   /* footer */
   footer .others {
     flex-direction: column;
@@ -308,7 +320,7 @@ footer .others {
   }
   /* main */
   main .img-div {
-    width: 200px;
+    width: 225px;
     height: auto;
   }
 }
